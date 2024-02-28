@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+      integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css"
+      rel="stylesheet"
+    />
+    <title>CRUD con PHP MySQL Bootstrap jQuery Ajax y Docker</title>
+  </head>
+  <body>
+    <div class="container mt-5">
+      <div class="row">
+        <div class="col-sm-3 mb-5">
+          <a class="btn btn-warning" href="index.html"
+            >Volver</a
+          >
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-sm-12">
+          <form id="form_agregar">
+            <div class="form-row">
+              <div class="form-group col-md-6">
+                <label for="nombre">Nombre</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="nombre"
+                  name="nombre"
+                />
+                <div id="nombre_invalido" class="invalid-feedback">
+                  Campo nombre invalido
+                </div>
+              </div>
+              <div class="form-group col-md-6">
+                <label for="apellido">Apellido</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="apellido"
+                  name="apellido"
+                />
+                <div id="apellido_invalido" class="invalid-feedback">
+                  Campo apellido invalido
+                </div>
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="form-group col-md-6">
+                <label for="telefono">Telefono</label>
+                <input
+                  type="number"
+                  class="form-control"
+                  id="telefono"
+                  name="telefono"
+                />
+                <div id="telefono_invalido" class="invalid-feedback">
+                  Campo Telefono invalido
+                </div>
+              </div>
+              <div class="form-group col-md-6">
+                <label for="direccion">Direccion</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="direccion"
+                  name="direccion"
+                />
+                <div id="direccion_invalido" class="invalid-feedback">
+                  Campo Direccion invalido
+                </div>
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="form-group col-md-6">
+                <label for="fecha_nacimiento">Fecha Nacimiento</label>
+                <input
+                  type="date"
+                  class="form-control"
+                  id="fecha_nacimiento"
+                  name="fecha_nacimiento"
+                />
+                <div id="fecha_nacimiento_invalido" class="invalid-feedback">
+                  Campo Fecha Nacimiento invalido
+                </div>
+              </div>
+              <div class="form-group col-md-6">
+                <label for="sueldo">Sueldo</label>
+                <input
+                  type="number"
+                  class="form-control"
+                  id="sueldo"
+                  name="sueldo"
+                />
+                <div id="sueldo_invalido" class="invalid-feedback">
+                  Campo Sueldo invalido
+                </div>
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="form-group col-md-6">
+                <label for="observacion">Observacion</label>
+                <textarea
+                  class="form-control"
+                  id="observacion"
+                  name="observacion"
+                ></textarea>
+                <div id="observacion_invalido" class="invalid-feedback">
+                  Campo Observacion invalido
+                </div>
+              </div>
+            </div>
+            <button type="submit" class="btn btn-primary">Guardar</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script
+    src="https://code.jquery.com/jquery-3.6.0.min.js"
+    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+    crossorigin="anonymous"
+  ></script>
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns"
+    crossorigin="anonymous"
+  ></script>
+
+  <script src="./js/script.js"></script>
+</html>
